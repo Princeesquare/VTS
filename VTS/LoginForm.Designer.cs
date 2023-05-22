@@ -109,6 +109,7 @@
             // 
             this.ptbox.Location = new System.Drawing.Point(235, 260);
             this.ptbox.Name = "ptbox";
+            this.ptbox.PasswordChar = '*';
             this.ptbox.Size = new System.Drawing.Size(145, 20);
             this.ptbox.TabIndex = 2;
             // 
