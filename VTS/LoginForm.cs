@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -128,6 +129,31 @@ namespace VTS
         private void LoginPage_Load(object sender, EventArgs e)
         {
               InitializeXmlDocument();
+        }
+
+        private void fb_Click(object sender, EventArgs e)
+        {
+            string link = "https://www.facebook.com/CIUOfficial/";
+            Process.Start(link);
+        
+        }
+
+        private void ig_Click(object sender, EventArgs e)
+        {
+            string link = "https://www.instagram.com/ciu.official/";
+            Process.Start(link);
+        }
+
+        private void twitter_Click(object sender, EventArgs e)
+        {
+            string link = "https://twitter.com/CIUOfficial";
+            Process.Start(link);
+        }
+
+        private void ciu_Click(object sender, EventArgs e)
+        {
+            string link = "https://www.ciu.edu.tr/en";
+            Process.Start(link);
         }
     }
 }

@@ -90,9 +90,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\LoginBackImage.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\backimage.png" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.uname = new System.Windows.Forms.Label();
             this.pwd = new System.Windows.Forms.Label();
@@ -39,17 +38,17 @@
             this.loginbtn = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.signupbtn = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.fb = new System.Windows.Forms.PictureBox();
+            this.ig = new System.Windows.Forms.PictureBox();
+            this.ciu = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.twitter = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.fb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ig)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ciu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.twitter)).BeginInit();
             this.SuspendLayout();
             // 
             // uname
@@ -152,44 +151,47 @@
             this.signupbtn.UseVisualStyleBackColor = false;
             this.signupbtn.Click += new System.EventHandler(this.signupbtn_Click);
             // 
-            // pictureBox1
+            // fb
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 323);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.fb.BackColor = System.Drawing.SystemColors.Control;
+            this.fb.Image = ((System.Drawing.Image)(resources.GetObject("fb.Image")));
+            this.fb.Location = new System.Drawing.Point(12, 323);
+            this.fb.Name = "fb";
+            this.fb.Size = new System.Drawing.Size(26, 26);
+            this.fb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fb.TabIndex = 5;
+            this.fb.TabStop = false;
+            this.fb.Click += new System.EventHandler(this.fb_Click);
             // 
-            // pictureBox2
+            // ig
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(44, 323);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.ig.BackColor = System.Drawing.SystemColors.Control;
+            this.ig.Image = ((System.Drawing.Image)(resources.GetObject("ig.Image")));
+            this.ig.Location = new System.Drawing.Point(44, 323);
+            this.ig.Name = "ig";
+            this.ig.Size = new System.Drawing.Size(26, 26);
+            this.ig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ig.TabIndex = 5;
+            this.ig.TabStop = false;
+            this.ig.Click += new System.EventHandler(this.ig_Click);
             // 
-            // pictureBox3
+            // ciu
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(76, 323);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.ciu.BackColor = System.Drawing.SystemColors.Control;
+            this.ciu.Image = ((System.Drawing.Image)(resources.GetObject("ciu.Image")));
+            this.ciu.Location = new System.Drawing.Point(76, 323);
+            this.ciu.Name = "ciu";
+            this.ciu.Size = new System.Drawing.Size(26, 26);
+            this.ciu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ciu.TabIndex = 5;
+            this.ciu.TabStop = false;
+            this.ciu.Click += new System.EventHandler(this.ciu_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox4.Image = global::VTS.Properties.Resources.cpy;
-            this.pictureBox4.Location = new System.Drawing.Point(116, 338);
+            this.pictureBox4.Location = new System.Drawing.Point(149, 338);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(14, 10);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,15 +202,23 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(136, 336);
+            this.label1.Location = new System.Drawing.Point(169, 336);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Copyright 2023";
             // 
-            // errorProvider1
+            // twitter
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.twitter.BackColor = System.Drawing.SystemColors.Control;
+            this.twitter.Image = global::VTS.Properties.Resources.twitter;
+            this.twitter.Location = new System.Drawing.Point(108, 323);
+            this.twitter.Name = "twitter";
+            this.twitter.Size = new System.Drawing.Size(35, 26);
+            this.twitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.twitter.TabIndex = 5;
+            this.twitter.TabStop = false;
+            this.twitter.Click += new System.EventHandler(this.twitter_Click);
             // 
             // LoginPage
             // 
@@ -220,9 +230,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.loginbtn);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.twitter);
+            this.Controls.Add(this.ciu);
+            this.Controls.Add(this.ig);
+            this.Controls.Add(this.fb);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.signupbtn);
             this.Controls.Add(this.ptbox);
@@ -237,11 +248,11 @@
             this.MaximizeBox = false;
             this.Name = "LoginPage";
             this.Text = "Vehicle Tracking System";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ig)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ciu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.twitter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,12 +269,12 @@
         private System.Windows.Forms.Button loginbtn;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button signupbtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox fb;
+        private System.Windows.Forms.PictureBox ig;
+        private System.Windows.Forms.PictureBox ciu;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.PictureBox twitter;
     }
 }
 
