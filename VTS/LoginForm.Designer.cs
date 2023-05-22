@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.uname = new System.Windows.Forms.Label();
             this.pwd = new System.Windows.Forms.Label();
@@ -37,22 +38,24 @@
             this.ptbox = new System.Windows.Forms.TextBox();
             this.loginbtn = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.signup = new System.Windows.Forms.Button();
+            this.signupbtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // uname
             // 
             this.uname.AutoSize = true;
-            this.uname.BackColor = System.Drawing.Color.White;
+            this.uname.BackColor = System.Drawing.SystemColors.Control;
             this.uname.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uname.Location = new System.Drawing.Point(121, 216);
             this.uname.Name = "uname";
@@ -63,7 +66,7 @@
             // pwd
             // 
             this.pwd.AutoSize = true;
-            this.pwd.BackColor = System.Drawing.Color.White;
+            this.pwd.BackColor = System.Drawing.SystemColors.Control;
             this.pwd.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pwd.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pwd.Location = new System.Drawing.Point(121, 252);
@@ -111,18 +114,22 @@
             // 
             // loginbtn
             // 
-            this.loginbtn.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.loginbtn.BackColor = System.Drawing.Color.LightSteelBlue;
             this.loginbtn.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginbtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.loginbtn.Location = new System.Drawing.Point(297, 297);
             this.loginbtn.Name = "loginbtn";
             this.loginbtn.Size = new System.Drawing.Size(83, 28);
-            this.loginbtn.TabIndex = 4;
+            this.loginbtn.TabIndex = 3;
             this.loginbtn.Text = "LOGIN";
             this.loginbtn.UseVisualStyleBackColor = false;
+            this.loginbtn.Click += new System.EventHandler(this.loginbtn_Click);
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.SystemColors.Control;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(423, 224);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -131,19 +138,22 @@
             this.textBox3.Text = "Don\'t Have An Account? ";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // signup
+            // signupbtn
             // 
-            this.signup.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.signup.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signup.Location = new System.Drawing.Point(489, 253);
-            this.signup.Name = "signup";
-            this.signup.Size = new System.Drawing.Size(83, 28);
-            this.signup.TabIndex = 4;
-            this.signup.Text = "SIGN UP";
-            this.signup.UseVisualStyleBackColor = false;
+            this.signupbtn.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.signupbtn.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupbtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.signupbtn.Location = new System.Drawing.Point(489, 253);
+            this.signupbtn.Name = "signupbtn";
+            this.signupbtn.Size = new System.Drawing.Size(83, 28);
+            this.signupbtn.TabIndex = 4;
+            this.signupbtn.Text = "SIGN UP";
+            this.signupbtn.UseVisualStyleBackColor = false;
+            this.signupbtn.Click += new System.EventHandler(this.signupbtn_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 323);
             this.pictureBox1.Name = "pictureBox1";
@@ -154,6 +164,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(44, 323);
             this.pictureBox2.Name = "pictureBox2";
@@ -164,6 +175,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(76, 323);
             this.pictureBox3.Name = "pictureBox3";
@@ -174,6 +186,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox4.Image = global::VTS.Properties.Resources.cpy;
             this.pictureBox4.Location = new System.Drawing.Point(116, 338);
             this.pictureBox4.Name = "pictureBox4";
@@ -185,12 +198,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(136, 336);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Copyright 2023";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // LoginPage
             // 
@@ -206,13 +223,15 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.signup);
+            this.Controls.Add(this.signupbtn);
             this.Controls.Add(this.ptbox);
             this.Controls.Add(this.utbox);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.pwd);
             this.Controls.Add(this.uname);
             this.Controls.Add(this.textBox1);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "LoginPage";
@@ -221,6 +240,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,12 +256,13 @@
         private System.Windows.Forms.TextBox ptbox;
         private System.Windows.Forms.Button loginbtn;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button signup;
+        private System.Windows.Forms.Button signupbtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 

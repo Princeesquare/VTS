@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VTS
 {
-    public partial class LoginPage : Form
+    public partial class Buses : Form
     {
-        public LoginPage()
+        public Buses()
         {
             InitializeComponent();
         }
