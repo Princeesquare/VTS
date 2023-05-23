@@ -103,6 +103,7 @@
             this.utbox.Name = "utbox";
             this.utbox.Size = new System.Drawing.Size(145, 20);
             this.utbox.TabIndex = 1;
+            this.utbox.Text = "admin";
             // 
             // ptbox
             // 
@@ -111,6 +112,7 @@
             this.ptbox.PasswordChar = '*';
             this.ptbox.Size = new System.Drawing.Size(145, 20);
             this.ptbox.TabIndex = 2;
+            this.ptbox.Text = "admin";
             // 
             // loginbtn
             // 
