@@ -12,9 +12,24 @@ namespace VTS
 {
     public partial class Buses : Form
     {
+        
         public Buses()
         {
             InitializeComponent();
+        }
+
+        private void bus1_Click(object sender, EventArgs e)
+        {
+            Bus1Time b1t = new Bus1Time();
+            b1t.Show();
+            this.Hide();
+        }
+
+        private void signoutbtn_Click(object sender, EventArgs e)
+        {
+            LoginPage login = new LoginPage();
+            login.Show();
+            this.Hide();
         }
     }
 }

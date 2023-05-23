@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bus1Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus1Time.Designer.cs">
+      <DependentUpon>Bus1Time.cs</DependentUpon>
+    </Compile>
     <Compile Include="Buses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bus1Time.resx">
+      <DependentUpon>Bus1Time.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Buses.resx">
       <DependentUpon>Buses.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +94,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\bus1.avif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -109,6 +119,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\st.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busback.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
