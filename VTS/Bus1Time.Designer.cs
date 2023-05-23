@@ -60,6 +60,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Bus1Time";
             this.Text = "Bus1Time";
+            this.Load += new System.EventHandler(this.Bus1Time_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 

@@ -43,5 +43,10 @@ namespace VTS
                 dataGridView.Rows[i].Cells[1].Value = "Row " + (i + 1) + ", Column 2";
             }
         }
+
+        private void Bus1Time_Load(object sender, EventArgs e)
+        {
+            SetupDataGridView();
+        }
     }
 }
