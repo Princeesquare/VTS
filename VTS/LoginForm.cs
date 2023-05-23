@@ -52,11 +52,15 @@ namespace VTS
                 MessageBox.Show("Please enter a username and password.");
                 return;
             }
+            if (!File.Exists(xmlFilePath))
+            {
+                CreateInitialXmlFile();
+            }
 
             if (ValidateCredentials(username, password))
             {
                
-                // Credentials are correct, open the new form
+                // if Credentials are correct, open the new form
                 Buses f2 = new Buses();
                 f2.Show();
 
@@ -72,14 +76,17 @@ namespace VTS
 
         private bool ValidateCredentials(string username, string password)
         {
+            // Load the XML document
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(xmlFilePath);
+
             // Find the user with matching credentials
-            XmlNodeList userNodes = xmlDoc.SelectNodes("/users/user");
+            XmlNodeList userNodes = xmlDoc.SelectNodes($"/users/user[@username='{username}']");
             foreach (XmlNode userNode in userNodes)
             {
-                string storedUsername = userNode.Attributes["username"].Value;
                 string storedPassword = userNode.Attributes["password"].Value;
 
-                if (storedUsername == username && storedPassword == password)
+                if (storedPassword == password)
                 {
                     return true; // Credentials match
                 }
@@ -87,7 +94,22 @@ namespace VTS
 
             return false; // No matching credentials found
         }
+        private void CreateInitialXmlFile()
+        {
+            // Create the XML document with a root element
+            XmlDocument xmlDoc = new XmlDocument();
+            XmlElement root = xmlDoc.CreateElement("users");
+            xmlDoc.AppendChild(root);
 
+            // Add a sample user
+            XmlElement user = xmlDoc.CreateElement("user");
+            user.SetAttribute("username", "admin");
+            user.SetAttribute("password", "admin");
+            root.AppendChild(user);
+
+            // Save the XML document
+            xmlDoc.Save(xmlFilePath);
+        }
         private void signupbtn_Click(object sender, EventArgs e)
         {
             string username = utbox.Text;
@@ -128,7 +150,10 @@ namespace VTS
 
         private void LoginPage_Load(object sender, EventArgs e)
         {
-              InitializeXmlDocument();
+           /* if (!File.Exists(xmlFilePath))
+            {
+               // InitializeXmlDocument();
+            }*/
         }
 
         private void fb_Click(object sender, EventArgs e)
