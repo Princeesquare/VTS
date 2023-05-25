@@ -51,37 +51,41 @@
             this.arcelik = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.jewelry = new System.Windows.Forms.LinkLabel();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.fella = new System.Windows.Forms.TextBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.kolan = new System.Windows.Forms.LinkLabel();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.kol = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.fuar = new System.Windows.Forms.LinkLabel();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.fua = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.sanayi = new System.Windows.Forms.LinkLabel();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.san = new System.Windows.Forms.TextBox();
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.yaysat = new System.Windows.Forms.LinkLabel();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.yay = new System.Windows.Forms.TextBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.area = new System.Windows.Forms.LinkLabel();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.are = new System.Windows.Forms.TextBox();
             this.linkLabel12 = new System.Windows.Forms.LinkLabel();
             this.linkLabel13 = new System.Windows.Forms.LinkLabel();
             this.linkLabel14 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.viewbtn = new System.Windows.Forms.Button();
+            this.signoutbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // back
             // 
+            this.back.BackColor = System.Drawing.Color.Transparent;
             this.back.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back.Location = new System.Drawing.Point(12, 325);
+            this.back.Location = new System.Drawing.Point(13, 302);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(101, 23);
             this.back.TabIndex = 0;
             this.back.Text = "Take Me Back";
-            this.back.UseVisualStyleBackColor = true;
-            this.back.Click += new System.EventHandler(this.button1_Click);
+            this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // textBox2
             // 
@@ -95,7 +99,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.White;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(16, 55);
@@ -172,7 +176,7 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.BackColor = System.Drawing.Color.White;
+            this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.Black;
             this.linkLabel2.Location = new System.Drawing.Point(16, 74);
@@ -206,7 +210,7 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.BackColor = System.Drawing.Color.White;
+            this.linkLabel3.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkColor = System.Drawing.Color.Black;
             this.linkLabel3.Location = new System.Drawing.Point(16, 93);
@@ -240,7 +244,7 @@
             // linkLabel4
             // 
             this.linkLabel4.AutoSize = true;
-            this.linkLabel4.BackColor = System.Drawing.Color.White;
+            this.linkLabel4.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel4.LinkColor = System.Drawing.Color.Black;
             this.linkLabel4.Location = new System.Drawing.Point(16, 112);
@@ -274,7 +278,7 @@
             // linkLabel5
             // 
             this.linkLabel5.AutoSize = true;
-            this.linkLabel5.BackColor = System.Drawing.Color.White;
+            this.linkLabel5.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel5.LinkColor = System.Drawing.Color.Black;
             this.linkLabel5.Location = new System.Drawing.Point(16, 131);
@@ -308,7 +312,7 @@
             // jewelry
             // 
             this.jewelry.AutoSize = true;
-            this.jewelry.BackColor = System.Drawing.Color.White;
+            this.jewelry.BackColor = System.Drawing.Color.Transparent;
             this.jewelry.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jewelry.LinkColor = System.Drawing.Color.Black;
             this.jewelry.Location = new System.Drawing.Point(16, 150);
@@ -318,15 +322,15 @@
             this.jewelry.TabStop = true;
             this.jewelry.Text = "6. Fellahoğlu Jewelry (Fellahoğlu Kuyumculuk)";
             // 
-            // textBox16
+            // fella
             // 
-            this.textBox16.Enabled = false;
-            this.textBox16.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(318, 147);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(254, 18);
-            this.textBox16.TabIndex = 3;
+            this.fella.Enabled = false;
+            this.fella.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fella.Location = new System.Drawing.Point(318, 147);
+            this.fella.Multiline = true;
+            this.fella.Name = "fella";
+            this.fella.Size = new System.Drawing.Size(254, 18);
+            this.fella.TabIndex = 3;
             // 
             // textBox17
             // 
@@ -342,7 +346,7 @@
             // kolan
             // 
             this.kolan.AutoSize = true;
-            this.kolan.BackColor = System.Drawing.Color.White;
+            this.kolan.BackColor = System.Drawing.Color.Transparent;
             this.kolan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kolan.LinkColor = System.Drawing.Color.Black;
             this.kolan.Location = new System.Drawing.Point(16, 169);
@@ -352,15 +356,15 @@
             this.kolan.TabStop = true;
             this.kolan.Text = "7. Kolan British Hospital (Kolan Hastanesi)";
             // 
-            // textBox18
+            // kol
             // 
-            this.textBox18.Enabled = false;
-            this.textBox18.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(318, 166);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(254, 18);
-            this.textBox18.TabIndex = 3;
+            this.kol.Enabled = false;
+            this.kol.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kol.Location = new System.Drawing.Point(318, 166);
+            this.kol.Multiline = true;
+            this.kol.Name = "kol";
+            this.kol.Size = new System.Drawing.Size(254, 18);
+            this.kol.TabIndex = 3;
             // 
             // textBox19
             // 
@@ -376,7 +380,7 @@
             // fuar
             // 
             this.fuar.AutoSize = true;
-            this.fuar.BackColor = System.Drawing.Color.White;
+            this.fuar.BackColor = System.Drawing.Color.Transparent;
             this.fuar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fuar.LinkColor = System.Drawing.Color.Black;
             this.fuar.Location = new System.Drawing.Point(16, 188);
@@ -386,15 +390,15 @@
             this.fuar.TabStop = true;
             this.fuar.Text = "8. Fairground (Fuar Alanı)";
             // 
-            // textBox20
+            // fua
             // 
-            this.textBox20.Enabled = false;
-            this.textBox20.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(318, 185);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(254, 18);
-            this.textBox20.TabIndex = 3;
+            this.fua.Enabled = false;
+            this.fua.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fua.Location = new System.Drawing.Point(318, 185);
+            this.fua.Multiline = true;
+            this.fua.Name = "fua";
+            this.fua.Size = new System.Drawing.Size(254, 18);
+            this.fua.TabIndex = 3;
             // 
             // textBox21
             // 
@@ -410,25 +414,25 @@
             // sanayi
             // 
             this.sanayi.AutoSize = true;
-            this.sanayi.BackColor = System.Drawing.Color.White;
+            this.sanayi.BackColor = System.Drawing.Color.Transparent;
             this.sanayi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sanayi.LinkColor = System.Drawing.Color.Black;
-            this.sanayi.Location = new System.Drawing.Point(16, 207);
+            this.sanayi.Location = new System.Drawing.Point(16, 206);
             this.sanayi.Name = "sanayi";
             this.sanayi.Size = new System.Drawing.Size(314, 13);
             this.sanayi.TabIndex = 2;
             this.sanayi.TabStop = true;
             this.sanayi.Text = "9. Organized Industrial Area (Organize Sanayi Bölgesi)";
             // 
-            // textBox22
+            // san
             // 
-            this.textBox22.Enabled = false;
-            this.textBox22.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox22.Location = new System.Drawing.Point(318, 204);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(254, 18);
-            this.textBox22.TabIndex = 3;
+            this.san.Enabled = false;
+            this.san.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.san.Location = new System.Drawing.Point(318, 204);
+            this.san.Multiline = true;
+            this.san.Name = "san";
+            this.san.Size = new System.Drawing.Size(254, 18);
+            this.san.TabIndex = 3;
             // 
             // textBox23
             // 
@@ -444,25 +448,25 @@
             // yaysat
             // 
             this.yaysat.AutoSize = true;
-            this.yaysat.BackColor = System.Drawing.Color.White;
+            this.yaysat.BackColor = System.Drawing.Color.Transparent;
             this.yaysat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yaysat.LinkColor = System.Drawing.Color.Black;
-            this.yaysat.Location = new System.Drawing.Point(16, 226);
+            this.yaysat.Location = new System.Drawing.Point(15, 226);
             this.yaysat.Name = "yaysat";
             this.yaysat.Size = new System.Drawing.Size(67, 13);
             this.yaysat.TabIndex = 2;
             this.yaysat.TabStop = true;
             this.yaysat.Text = "10. Yaysat";
             // 
-            // textBox24
+            // yay
             // 
-            this.textBox24.Enabled = false;
-            this.textBox24.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox24.Location = new System.Drawing.Point(318, 223);
-            this.textBox24.Multiline = true;
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(254, 18);
-            this.textBox24.TabIndex = 3;
+            this.yay.Enabled = false;
+            this.yay.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yay.Location = new System.Drawing.Point(318, 223);
+            this.yay.Multiline = true;
+            this.yay.Name = "yay";
+            this.yay.Size = new System.Drawing.Size(254, 18);
+            this.yay.TabIndex = 3;
             // 
             // textBox25
             // 
@@ -478,7 +482,7 @@
             // area
             // 
             this.area.AutoSize = true;
-            this.area.BackColor = System.Drawing.Color.White;
+            this.area.BackColor = System.Drawing.Color.Transparent;
             this.area.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.area.LinkColor = System.Drawing.Color.Black;
             this.area.Location = new System.Drawing.Point(16, 245);
@@ -488,15 +492,15 @@
             this.area.TabStop = true;
             this.area.Text = "11. CIU Service Area";
             // 
-            // textBox26
+            // are
             // 
-            this.textBox26.Enabled = false;
-            this.textBox26.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox26.Location = new System.Drawing.Point(318, 242);
-            this.textBox26.Multiline = true;
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(254, 18);
-            this.textBox26.TabIndex = 3;
+            this.are.Enabled = false;
+            this.are.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.are.Location = new System.Drawing.Point(318, 242);
+            this.are.Multiline = true;
+            this.are.Name = "are";
+            this.are.Size = new System.Drawing.Size(254, 18);
+            this.are.TabIndex = 3;
             // 
             // linkLabel12
             // 
@@ -528,19 +532,56 @@
             this.linkLabel14.Size = new System.Drawing.Size(0, 13);
             this.linkLabel14.TabIndex = 2;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(9, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(379, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Click the bus-stops below to view the location of the bus";
+            // 
+            // viewbtn
+            // 
+            this.viewbtn.BackColor = System.Drawing.Color.Transparent;
+            this.viewbtn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewbtn.Location = new System.Drawing.Point(235, 302);
+            this.viewbtn.Name = "viewbtn";
+            this.viewbtn.Size = new System.Drawing.Size(153, 23);
+            this.viewbtn.TabIndex = 0;
+            this.viewbtn.Text = "View Bus Time-Table";
+            this.viewbtn.UseVisualStyleBackColor = false;
+            // 
+            // signoutbtn
+            // 
+            this.signoutbtn.BackColor = System.Drawing.Color.Transparent;
+            this.signoutbtn.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signoutbtn.ForeColor = System.Drawing.Color.Black;
+            this.signoutbtn.Location = new System.Drawing.Point(459, 302);
+            this.signoutbtn.Name = "signoutbtn";
+            this.signoutbtn.Size = new System.Drawing.Size(113, 23);
+            this.signoutbtn.TabIndex = 4;
+            this.signoutbtn.Text = "LOG OUT";
+            this.signoutbtn.UseVisualStyleBackColor = false;
+            this.signoutbtn.Click += new System.EventHandler(this.signoutbtn_Click);
+            // 
             // Bus1Time
             // 
+            this.AcceptButton = this.back;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.signoutbtn);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.are);
+            this.Controls.Add(this.yay);
+            this.Controls.Add(this.san);
+            this.Controls.Add(this.fua);
+            this.Controls.Add(this.kol);
+            this.Controls.Add(this.fella);
             this.Controls.Add(this.arcelik);
             this.Controls.Add(this.kiler);
             this.Controls.Add(this.belca);
@@ -560,6 +601,7 @@
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.viewbtn);
             this.Controls.Add(this.back);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox25);
@@ -575,8 +617,10 @@
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Bus1Time";
             this.Text = "Bus Arrival Time";
+            this.Load += new System.EventHandler(this.Bus1Time_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -606,24 +650,27 @@
         private System.Windows.Forms.TextBox arcelik;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.LinkLabel jewelry;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox fella;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.LinkLabel kolan;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox kol;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.LinkLabel fuar;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox fua;
         private System.Windows.Forms.TextBox textBox21;
         private System.Windows.Forms.LinkLabel sanayi;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox san;
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.LinkLabel yaysat;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox yay;
         private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.LinkLabel area;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox are;
         private System.Windows.Forms.LinkLabel linkLabel12;
         private System.Windows.Forms.LinkLabel linkLabel13;
         private System.Windows.Forms.LinkLabel linkLabel14;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button viewbtn;
+        private System.Windows.Forms.Button signoutbtn;
     }
 }

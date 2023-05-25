@@ -44,6 +44,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.twitter = new System.Windows.Forms.PictureBox();
+            this.exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ciu)).BeginInit();
@@ -222,6 +223,19 @@
             this.twitter.TabStop = false;
             this.twitter.Click += new System.EventHandler(this.twitter_Click);
             // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.exit.Font = new System.Drawing.Font("Monotype Corsiva", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.exit.Location = new System.Drawing.Point(489, 297);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(83, 28);
+            this.exit.TabIndex = 3;
+            this.exit.Text = "EXIT";
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
             // LoginPage
             // 
             this.AcceptButton = this.loginbtn;
@@ -230,6 +244,7 @@
             this.BackgroundImage = global::VTS.Properties.Resources.backimage;
             this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.loginbtn);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.twitter);
@@ -278,6 +293,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox twitter;
+        private System.Windows.Forms.Button exit;
     }
 }
 

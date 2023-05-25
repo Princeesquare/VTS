@@ -20,7 +20,14 @@ namespace VTS
 
         private void bus1_Click(object sender, EventArgs e)
         {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            int centerX = screenWidth / 2;
+            int centerY = screenHeight / 2;
+           
             Bus1Time b1t = new Bus1Time();
+            b1t.StartPosition = FormStartPosition.Manual;
+            b1t.Location = new System.Drawing.Point(centerX - b1t.Width / 2, centerY - b1t.Height / 2);
             b1t.Show();
             this.Hide();
         }

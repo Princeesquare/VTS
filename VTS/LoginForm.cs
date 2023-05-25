@@ -192,5 +192,10 @@ namespace VTS
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new System.Drawing.Point(centerX, centerY);
         }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
