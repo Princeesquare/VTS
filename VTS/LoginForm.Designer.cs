@@ -250,6 +250,7 @@
             this.MaximizeBox = false;
             this.Name = "LoginPage";
             this.Text = "Vehicle Tracking System";
+            this.Load += new System.EventHandler(this.LoginPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ciu)).EndInit();

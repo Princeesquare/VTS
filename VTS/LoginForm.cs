@@ -59,9 +59,15 @@ namespace VTS
 
             if (ValidateCredentials(username, password))
             {
-               
-                // if Credentials are correct, open the new form
+                int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+                int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+                int centerX = screenWidth / 2;
+                int centerY = screenHeight / 2;
+
+                // if Credentials are correct, open the Buses Page
                 Buses f2 = new Buses();
+                f2.StartPosition = FormStartPosition.Manual;
+                f2.Location = new System.Drawing.Point(centerX - f2.Width / 2, centerY - f2.Height / 2);
                 f2.Show();
 
                 // Close the login form
@@ -148,14 +154,6 @@ namespace VTS
 
         }
 
-        private void LoginPage_Load(object sender, EventArgs e)
-        {
-           /* if (!File.Exists(xmlFilePath))
-            {
-               // InitializeXmlDocument();
-            }*/
-        }
-
         private void fb_Click(object sender, EventArgs e)
         {
             string link = "https://www.facebook.com/CIUOfficial/";
@@ -179,6 +177,20 @@ namespace VTS
         {
             string link = "https://www.ciu.edu.tr/en";
             Process.Start(link);
+        }
+
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            int formWidth = this.Width;
+            int formHeight = this.Height;
+            int centerX = (screenWidth - formWidth) / 2;
+            int centerY = (screenHeight - formHeight) / 2;
+
+            // Position the form at the center
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new System.Drawing.Point(centerX, centerY);
         }
     }
 }

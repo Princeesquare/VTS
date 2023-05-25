@@ -27,7 +27,13 @@ namespace VTS
 
         private void signoutbtn_Click(object sender, EventArgs e)
         {
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            int centerX = screenWidth / 2;
+            int centerY = screenHeight / 2;
             LoginPage login = new LoginPage();
+            login.StartPosition = FormStartPosition.Manual;
+            login.Location = new System.Drawing.Point(centerX - login.Width / 2, centerY - login.Height / 2);
             login.Show();
             this.Hide();
         }
